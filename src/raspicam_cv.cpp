@@ -163,7 +163,7 @@ namespace raspicam {
             if ( value>0 && value<=100 ) { 
                 _impl->setShutterSpeed ( Scaler::scale ( 0,100,0,330000, value ) );
             } else {
-                _impl->setExposure ( RASPICAM_EXPOSURE_AUTO );
+                _impl->setExposure ( RASPICAM_EXPOSURE_OFF );
                 _impl->setShutterSpeed ( 0 );
             }
             break;
